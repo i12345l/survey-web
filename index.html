@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 심리 테스트 설문조사 </title>
+    <main charset = "utf-8"/>
+    <script lang="javascript" src="javascript/main.js"></script>
+    <script>
+        function Check(){
+            var A = document.getElementsByTagName("label");
+            A[0].style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <form action = "form.php" accept = "utf-8" method = "POST">
+        <fieldset>
+            <legend>인적 사항</legend>
+            <label>이름 : </label>
+            <input type = "text" name = "Name"/><br/>
+            <label>혈액형 : </label>
+            <input type="radio" name="Bloodtype" value="A"/> A
+            <input type="radio" name="Bloodtype" value="B"/> B
+            <input type="radio" name="Bloodtype" value="AB"/> AB
+            <input type="radio" name="Bloodtype" value="O"/> O<br/>
+            <label>나이</label>
+            <input type="number" name="Age"/><br/>
+            <label>성별</label>
+            <input type="radio" name="Gender" value="M"/> 남성
+            <input type="radio" name="Gender" value="F"/> 여성
+        </fieldset>
+
+        <input type = "submit"/>
+    </form>
+    <input type="button" onclick="javascript: Check('4','hello');" value = "Check()"/>
+</body>
+</html>
