@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>심리 테스트 설문조사</title>
+    <title> 심리 테스트 설문조사 </title>
+    <main charset = "utf-8"/>
+    <script lang="javascript" src="javascript/main.js"></script>
+    <script>
+    </script>
     <style>
         .noselect {
             -webkit-touch-callout: none;
@@ -50,7 +54,7 @@
     </style>
     <script>
         function test() {
-            var A = document.getElementById("first");
+            var A = document.getElementById("Second");
             var B = document.getElementById("second");
             A.style.display = "none";
             A.style.visibility = "hidden";
@@ -59,13 +63,42 @@
             
             var Advantages = document.getElementsByClassName("Advantage");
             for (var C of Advantages) {
-                
+                C.style.display="block";
+                C.style.visibility="visible";
+            }
+        }
+        function question1() {
+            var A = document.getElementById("second");
+            var B = document.getElementById("third");
+            A.style.display = "none";
+            A.style.visibility = "hidden";
+            B.style.display = "block";
+            B.style.visibility = "visible";
+            
+            var Advantages = document.getElementsByClassName("Advantage");
+            for (var C of Advantages) {
+                C.style.display="block";
+                C.style.visibility="visible";
+            }
+        }
+        function question2() {
+            var A = document.getElementById("third");
+            var B = document.getElementById("fourth");
+            A.style.display = "none";
+            A.style.visibility = "hidden";
+            B.style.display = "block";
+            B.style.visibility = "visible";
+            
+            var Advantages = document.getElementsByClassName("Advantage");
+            for (var C of Advantages) {
+                C.style.display="block";
+                C.style.visibility="visible";
             }
         }
     </script>
 </head>
 <body>
-<form id = "test" action = "end.php" method = "POST">
+<form id = "test" action = "final.php" method = "POST">
     <span id = "Data" style = "display: block;">
         <?php
             $a = $_POST["Name"];
@@ -74,8 +107,8 @@
             $d = $_POST["Gender"];
             print('<input type = "text" name = "Name" value = "'.$a.'"/>');
             print('<input type = "text" name = "Bloodtype" value = "'.$b.'"/>');
-            print('<input type = "number" name = "Age" value = "'.$c.'"/>');
-            print('<input type = "text" name = "Name" value = "'.$d.'"/>');
+            print('<input type = "text" name = "Age" value = "'.$c.'"/>');
+            print('<input type = "text" name = "Gender" value = "'.$d.'"/>');
 
         ?>
     </span>
@@ -105,35 +138,61 @@
         <innput type = "submit"/>
     </span>
     <div id = "second" style = "visibility: hidden; display: none;">
-        <h2> 해당 성격유형의 장점과 단점입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <h2> 해당 성격유형의 장점입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
         <table id = "show">
-            <tr>
-                <td class = "B">
+            <tr class = "B">
                     <p>장점</p>
-                </td>
-                <td class = "B">
-                    <p>단점</p>
-                </td>
             </tr>
             <tr>
-                <td class = "A" id = "Advantage">
-                    <li class = "Advantage"></li>
-                </td>
-                <td class = "A" id = "DisAdvantage">
-
-                </td>
+                <p>내용</p>
             </tr>
         </table>
         <table>
             <tr>
-                <td> 매우 일치한다. </td>
-                <td> 약간 일치한다. </td>
-                <td> 반반이다 </td>
-                <td> 일치하지 않는다. </td>
-                <td> 전혀 일치하지 않는다. </td>
+                <td> <input type="radio" name="advantage" value="correct"/>일치한다. <br/></td>
+                <td> <input type="radio" name="advantage" value="midium"/>보통이다. <br/></td>
+                <td> <input type="radio" name="advantage" value="incorrect">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" id = "Sure5" onclick = "javascript: change('Sure5')"/>
+        <input type = "button" id = "next" onclick = "javascript: question1()"/>next</button>
+    </div>
+    <div id = "third" style = "visibility: hidden; display: none;">
+        <h2> 해당 성격유형 단점입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <table id = "show">
+            <tr class = "B">
+                <p>단점</p>
+            </tr>
+            <tr>
+                <p>내용</p>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td> <input type="radio" name="weakness" value="correct"/>일치한다. <br/></td>
+                <td> <input type="radio" name="weakness" value="midium"/>보통이다. <br/></td>
+                <td> <input type="radio" name="weakness" value="incorrect">일치하지 않는다. <br/></td>
+            </tr>
+        </table>
+        <input type = "button" id = "next" onclick = "javascript: question2()"/>next</button>
+    </div>
+    <div id = "fourth" style = "visibility: hidden; display: none;">
+        <h2> 해당 성격유형의 연인관계입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <table id = "show">
+            <tr class = "B">
+                <p>연인관계</p>
+            </tr>
+            <tr>
+                <p>내용</p>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td> <input type="radio" name="love" value="correct"/>일치한다. <br/></td>
+                <td> <input type="radio" name="love" value="midium"/>보통이다. <br/></td>
+                <td> <input type="radio" name="love" value="incorrect">일치하지 않는다. <br/></td>
+            </tr>
+        </table>
+        <input type = "submit"/>
     </div>
 </form>
 </body>
