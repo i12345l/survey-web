@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title> 심리검사테스트 - 한국교원대학교부설고등학교</title>
     <style>
         .noselect {
             -webkit-touch-callout: none;
