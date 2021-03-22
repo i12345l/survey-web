@@ -56,9 +56,9 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="-1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro7" value="1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro7" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro7" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
         <input type = "button" class = "next" onclick = "javascript: question1()"/>next</button>
@@ -72,9 +72,9 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="-1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro1" value="1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro1" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro1" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
         <input type = "button" class = "next" onclick = "javascript: question2()"/>next</button>
@@ -89,9 +89,9 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="-1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro2" value="-1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro2" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro2" value="1">일치하지 않는다. <br/></td>
             </tr>
         </table>
         <input type = "button" class = "next" onclick = "javascript: question3()"/>next</button>
@@ -105,9 +105,9 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="-1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro3" value="1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro3" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro3" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
         <input type = "button" class = "next" onclick = "javascript: question4()"/>next</button>
@@ -121,9 +121,9 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="-1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro4" value="-1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro4" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro4" value="1">일치하지 않는다. <br/></td>
             </tr>
         </table>
         <input type = "button" class = "next" onclick = "javascript: question5()"/>next</button>
@@ -137,9 +137,9 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="-1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro5" value="1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro5" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro5" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
         <input type = "button" class = "next" onclick = "javascript: question6()"/>next</button>
@@ -153,11 +153,12 @@
         </table>
         <table>
             <tr>
-                <td> <input type="radio" name="advantage" value="-1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="advantage" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="advantage" value="1">일치하지 않는다. <br/></td>
+                <td> <input type="radio" name="pro6" value="-1"/>일치한다. <br/></td>
+                <td> <input type="radio" name="pro6" value="0"/>잘 모르겠다. <br/></td>
+                <td> <input type="radio" name="pro6" value="1">일치하지 않는다. <br/></td>
             </tr>
         </table>
+        <input hidden="hidden" />
         <input type = "submit"/>
     </div>
 </form>
