@@ -25,7 +25,7 @@
     </span>
     <span id = "first" style = "display: block; visibility: visible;">
         <h2>당신의 성격유형은 어떤 것 인가요?</h2>
-        <fieldset id="fieldss">
+        <fieldset id="mbtifield">
         <input type = "radio" name = "Personality" value = "ISTJ"/> ISTJ - 청렴결백한 논리주의자 <br/>
         <input type = "radio" name = "Personality" value = "ISFJ"/> ISFJ - 용감한 수호자 <br/>
         <input type = "radio" name = "Personality" value = "INFJ"/> INFJ - 선의의 옹호자 <br/>
@@ -46,36 +46,40 @@
         <input type = "radio" name = "Personality" value = "ENFJ"/> ENFJ - 정의로운 사회운동가 <br/>
         <input type = "radio" name = "Personality" value = "ENTJ"/> ENTJ - 대담한 통솔자 <br/>
         </fieldset>
-        <button type = "button" class = "next" onclick = "javascript: insert(); mbti();">Next</button>
+        <button type = "button" class = "Next" onclick = "javascript: insert();mbti();">Next</button>
     </span>
     <div id = "second" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 첫번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q1">내용</p> 
             </tr>
         </table>
+        </fieldset>
         <table>
-            <tr>
-                <td> <input type="radio" name="pro7" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro7" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro7" value="-1">일치하지 않는다. <br/></td>
+            <tr class = "anwser">
+                <tr> <input type="radio" name="pro7" value="1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro7" value="-1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro7" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <button type = "button" class = "next" onclick = "javascript: question1()"/>Next</button>
     </div>
     <div id = "third" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 두번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q2">내용</p> 
             </tr>
         </table>
+        </fieldset>
         <table>
-            <tr>
-                <td> <input type="radio" name="pro1" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro1" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro1" value="-1">일치하지 않는다. <br/></td>
+            <tr class = "anwser">
+                <tr> <input type="radio" name="pro1" value="1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro1" value="-1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro1" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <button type = "button" class = "next" onclick = "javascript: question2()"/>Next</button>
@@ -83,84 +87,94 @@
     
     <div id = "fourth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 세번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q3">내용</p> 
             </tr>
         </table>
+        </fieldset>
         <table>
-            <tr>
-                <td> <input type="radio" name="pro2" value="-1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro2" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro2" value="1">일치하지 않는다. <br/></td>
+            <tr class = "anwser">
+                <tr> <input type="radio" name="pro2" value="-1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro2" value="1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro2" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <button type = "button" class = "next" onclick = "javascript: question3()"/>Next</button>
     </div>
     <div id = "fifth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 네번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q4">내용</p> 
-            </tr>
+            </tr class = "anwser">
         </table>
+        </fieldset>
         <table>
             <tr>
-                <td> <input type="radio" name="pro3" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro3" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro3" value="-1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro3" value="1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro3" value="-1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro3" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <button type = "button" class = "next" onclick = "javascript: question4()"/>Next</button>
     </div>
     <div id = "sixth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 다섯번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q5">내용</p> 
             </tr>
         </table>
+        </fieldset>
         <table>
-            <tr>
-                <td> <input type="radio" name="pro4" value="-1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro4" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro4" value="1">일치하지 않는다. <br/></td>
+            <tr class = "anwser">
+                <tr> <input type="radio" name="pro4" value="-1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro4" value="1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro4" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <button type = "button" class = "next" onclick = "javascript: question5()"/>Next</button>
     </div>
     <div id = "seventh" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 여섯번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q6">내용</p> 
             </tr>
         </table>
+        </fieldset>
         <table>
-            <tr>
-                <td> <input type="radio" name="pro5" value="1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro5" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro5" value="-1">일치하지 않는다. <br/></td>
+            <tr class = "anwser">
+                <tr> <input type="radio" name="pro5" value="1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro5" value="-1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro5" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <button type = "button" class = "next" onclick = "javascript: question6()"/>Next</button>
     </div>
     <div id = "eighth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 일곱번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
+        <fieldset class = "anwserfield">
         <table class = "q_table">
             <tr>
                 <p id="q7">내용</p> 
             </tr>
         </table>
+        </fieldset>
         <table>
-            <tr>
-                <td> <input type="radio" name="pro6" value="-1"/>일치한다. <br/></td>
-                <td> <input type="radio" name="pro6" value="0"/>잘 모르겠다. <br/></td>
-                <td> <input type="radio" name="pro6" value="1">일치하지 않는다. <br/></td>
+            <tr class = "anwser">
+                <tr> <input type="radio" name="pro6" value="-1"/>일치한다. <br/></td>
+                <tr> <input type="radio" name="pro6" value="1">일치하지 않는다. <br/></td>
+                <tr> <input type="radio" name="pro6" value="0"/>잘 모르겠다. <br/></td>
             </tr>
         </table>
         <input hidden="hidden" />
-        <input type = "submit"/>
+        <input type = "submit" id="sub"/>
     </div>
 </form>
 </body>

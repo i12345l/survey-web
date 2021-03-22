@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 심리 테스트 설문조사 </title>
+    <main charset = "utf-8"/>
+    <script lang="javascript" src="javascript/main.js"></script>
+    <script>
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form action = "form.php" accept = "utf-8" method = "POST">
+        <fieldset class="field">
+            <legend>인적 사항</legend>
+            <label>이름</label>
+            <input type="text" name="Name" value=""/><br/>
+            <label>혈액형 : </label>
+            <input type="radio" name="Bloodtype" value="A"/> A
+            <input type="radio" name="Bloodtype" value="B"/> B
+            <input type="radio" name="Bloodtype" value="AB"/> AB
+            <input type="radio" name="Bloodtype" value="O"/> O<br/>
+            <label>나이</label>
+            <input type="number" name="Age"/><br/>
+            <label>성별</label>
+            <input type="radio" name="Gender" value="M"/> 남성
+            <input type="radio" name="Gender" value="F"/> 여성
+        </fieldset>
+        <input id="su" type = "submit"/>
+    </form>
+</body>
+</html>

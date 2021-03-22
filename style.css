@@ -1,0 +1,83 @@
+
+        .noselect {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        #test {
+            position: relative;
+            margin: 0px;
+            padding-left: 2px;
+            display: table; margin-left: auto; margin-right: auto;
+            align-items: center;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 255);
+            height: 500px;
+        }
+        .Next {
+            position: relative; right: 52%; top: 5px;
+            float: right;
+            bottom: 0px;
+        }
+        .next {
+            position: relative; left: 300px;
+        }
+        #show {
+            border: 1px solid black;
+            width: 400px;
+            background-color: black;
+        }
+        tr {
+            text-align: center;
+            border: 1px solid black;
+        }
+        td p {
+            text-align: center;
+        }
+        td {
+            text-align: left;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .field {
+            width: 250px;
+            position: relative;
+            margin-top: 20%; 
+            display: table; margin-left: auto; margin-right: auto;
+        }
+        #su {
+            position: relative; margin-top: 0.2%; display: table; margin-left: auto; margin-right: auto;
+        } 
+        #mbtifield {
+            position: relative;
+            padding-left: 10%;
+            width: 350px;            
+        }
+        .anwserfield {
+            text-align: center;
+            width: 350px;
+        }
+        #first {
+            position: relative; 
+        }
+        .anwser {
+            position:  relative;
+            left: 40% 
+        }
+        #second {
+            position: relative;
+            display: table; margin-left: auto; margin-right: auto;
+        }
+        #sub {
+            position: relative;
+            left: 30% 
+        }
+
+      
