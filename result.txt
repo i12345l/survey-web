@@ -1,1 +1,3 @@
-,조윤성,A,14,M,ISTJ,correct,midium,correct
+
+,조윤성,A,17,M,ISFJ,midium,correct,correct
+,조윤성,A,18,M,ISTJ,correct,midium,correct

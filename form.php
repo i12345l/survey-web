@@ -4,54 +4,9 @@
     <title> 심리 테스트 설문조사 </title>
     <main charset = "utf-8"/>
     <script lang="javascript" src="javascript/main.js"></script>
-    <script>
+    <script src="main.js">
     </script>
-    <style>
-        .noselect {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        body {
-            width: 100%;
-            height: 100%;
-        }
-        #test {
-            position: relative;
-            margin: 0px;
-            padding-left: 2px;
-            left: 25%;
-            align-items: center;
-            width: 50%;
-            background-color: rgba(255, 255, 255, 255);
-            height: 500px;
-        }
-        .next {
-            float: right;
-            top: 100%;
-            bottom: 0px;
-        }
-        #show {
-            border: 1px solid black;
-            width: 400px;
-            background-color: black;
-        }
-        tr {
-            text-align: center;
-            border: 1px solid black;
-        }
-        td p {
-            text-align: center;
-        }
-        td {
-            text-align: left;
-            border: 1px solid black;
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script>
         function test() {
             var A = document.getElementById("Second");
@@ -134,8 +89,7 @@
         <input type = "radio" name = "Personality" value = "ENFJ"/> ENFJ - 정의로운 사회운동가 <br/>
         <input type = "radio" name = "Personality" value = "ENTJ"/> ENTJ - 대담한 통솔자 <br/>
 
-        <button type = "button" class = "next" onclick = "javascript: test();">Next</button>
-        <innput type = "submit"/>
+        <button type = "button" class = "next" onclick = "javascript: test(),mbti();">Next</button>
     </span>
     <div id = "second" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 장점입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
@@ -144,7 +98,7 @@
                     <p>장점</p>
             </tr>
             <tr>
-                <p>내용</p>
+                <h1>내용</h1>
             </tr>
         </table>
         <table>

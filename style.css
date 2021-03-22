@@ -1,0 +1,45 @@
+
+        .noselect {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        #test {
+            position: relative;
+            margin: 0px;
+            padding-left: 2px;
+            left: 25%;
+            align-items: center;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 255);
+            height: 500px;
+        }
+        .next {
+            float: right;
+            top: 100%;
+            bottom: 0px;
+        }
+        #show {
+            border: 1px solid black;
+            width: 400px;
+            background-color: black;
+        }
+        tr {
+            text-align: center;
+            border: 1px solid black;
+        }
+        td p {
+            text-align: center;
+        }
+        td {
+            text-align: left;
+            border: 1px solid black;
+            background-color: white;
+        }

@@ -5,21 +5,18 @@
     <main charset = "utf-8"/>
     <script lang="javascript" src="javascript/main.js"></script>
     <script>
-        function Check(){
-            var A = document.getElementsByTagName("label");
-            A[0].style.color="red";
-        }
     </script>
 </head>
 <body>
     <?php
+        $txt=$txt."\n";
         foreach ($_POST as $Key => $Value) {
-            $txt=$txt.",".$Value;
-            print('<input type = "text" name = "'.$Key.'" value = "'.$Value.'" style = "display: block; visibility: visible;"/>');
+            $txt=$txt." ".$Value;
         }
-        $myfile = fopen("result.txt", "w");
+        $myfile = fopen("result.txt", "a");
         fwrite($myfile,$txt);
         fclose($myfile);
     ?>
+    <p>설문에 참여해주셔서 감사합니다!</p>
 </body>
 </html>
