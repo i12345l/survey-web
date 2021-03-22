@@ -5,7 +5,6 @@ function mbti() {
             const mbti=document.getElementsByName("Personality")[i].value;
         }
     }
-}
 if(mbti="INTP"){
     document.getElementById("q1").innerHTML = "나는 좋은 분석능력을 지녔으며 풍부한 생각을 하는 사람이다.";
     document.getElementById("q2").innerHTML = "나는 창의적이고 독창적인 사람이다.";
@@ -150,7 +149,7 @@ if(mbti="ESFP"){
     document.getElementById("q6").innerHTML = "나는 정직하고 직진적이다.";
     document.getElementById("q7").innerHTML = "나는 매우 사교적인 사람이다.";
 } 
-
+}
 
 function question1() {
 var A = document.getElementById("second");

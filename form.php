@@ -4,11 +4,12 @@
     <title> 심리 테스트 설문조사 - AHSKNUE </title>
     <main charset = "utf-8"/>
     <script lang="javascript" src="javascript/main.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js">
+    </script>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-<form id = "test" action = "final.php" method = "POST">
+<form id = "test" action = "final.php" method = "POST" onsubmit="return false;">
     <span id = "Data" style = "display: none;">
         <?php
             
@@ -45,7 +46,7 @@
         <input type = "radio" name = "Personality" value = "ENFJ"/> ENFJ - 정의로운 사회운동가 <br/>
         <input type = "radio" name = "Personality" value = "ENTJ"/> ENTJ - 대담한 통솔자 <br/>
         </fieldset>
-        <button type = "button" class = "next" onclick = "javascript: insert(),mbti()">Next</button>
+        <button type = "button" class = "next" onclick = "javascript: insert(); mbti();">Next</button>
     </span>
     <div id = "second" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 첫번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
@@ -61,7 +62,7 @@
                 <td> <input type="radio" name="pro7" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" class = "next" onclick = "javascript: question1()"/>next</button>
+        <button type = "button" class = "next" onclick = "javascript: question1()"/>Next</button>
     </div>
     <div id = "third" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 두번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
@@ -77,7 +78,7 @@
                 <td> <input type="radio" name="pro1" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" class = "next" onclick = "javascript: question2()"/>next</button>
+        <button type = "button" class = "next" onclick = "javascript: question2()"/>Next</button>
     </div>
     
     <div id = "fourth" style = "visibility: hidden; display: none;">
@@ -94,7 +95,7 @@
                 <td> <input type="radio" name="pro2" value="1">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" class = "next" onclick = "javascript: question3()"/>next</button>
+        <button type = "button" class = "next" onclick = "javascript: question3()"/>Next</button>
     </div>
     <div id = "fifth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 네번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
@@ -110,7 +111,7 @@
                 <td> <input type="radio" name="pro3" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" class = "next" onclick = "javascript: question4()"/>next</button>
+        <button type = "button" class = "next" onclick = "javascript: question4()"/>Next</button>
     </div>
     <div id = "sixth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 다섯번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
@@ -126,7 +127,7 @@
                 <td> <input type="radio" name="pro4" value="1">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" class = "next" onclick = "javascript: question5()"/>next</button>
+        <button type = "button" class = "next" onclick = "javascript: question5()"/>Next</button>
     </div>
     <div id = "seventh" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 여섯번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
@@ -142,7 +143,7 @@
                 <td> <input type="radio" name="pro5" value="-1">일치하지 않는다. <br/></td>
             </tr>
         </table>
-        <input type = "button" class = "next" onclick = "javascript: question6()"/>next</button>
+        <button type = "button" class = "next" onclick = "javascript: question6()"/>Next</button>
     </div>
     <div id = "eighth" style = "visibility: hidden; display: none;">
         <h2> 해당 성격유형의 일곱번째 특징입니다. <br/> 현재의 당신과 얼마나 일치한가요</h2>
